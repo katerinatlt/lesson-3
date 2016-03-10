@@ -1,0 +1,13 @@
+.nav--horiz:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav--horiz .nav__item {
+  float: left;
+}
+
+.nav--horiz .nav__link {
+  display: block;
+}

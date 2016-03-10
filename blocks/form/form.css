@@ -1,0 +1,9 @@
+.form {}
+
+.form__field,
+.form__submit {
+  border: none;
+  background: none;
+  font-family: open sans, sans-serif;
+  border-radius: 5px;
+}

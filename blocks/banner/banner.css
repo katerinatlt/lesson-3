@@ -1,0 +1,50 @@
+.banner {
+  height: 934px;
+  background: url(banner_bkg.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 402px;
+}
+
+.banner__title,
+.banner__caption {
+  margin: 0;
+}
+
+.banner__title,
+.banner__caption,
+.banner__description {
+  color: #fff;
+}
+
+.banner__title {
+  font-size: 62px;
+  letter-spacing: 3px;
+}
+
+.banner__caption {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  width: 52%;
+  margin-top: 10px;
+  line-height: 37px;
+}
+
+.banner__description {
+  width: 100%;
+  background: rgba(71, 160, 255, 0.85);
+  position: absolute;
+  bottom: 0;
+}
+
+.banner__p {
+  width: 50%;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 24px;
+  padding-left: 25px;
+  padding-bottom: 36px;
+  padding-top: 48px;
+  letter-spacing: 0.4px;
+}
