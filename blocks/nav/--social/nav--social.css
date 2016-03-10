@@ -1,0 +1,27 @@
+.nav--social {}
+
+.nav--social .nav__item:not(:first-child) {
+  margin-left: 11px;
+}
+
+.nav--social .nav__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 25px;
+  background-image: url(social_icon.png);
+  background-repeat: no-repeat;
+  background-color: #47a0ff;
+}
+
+.nav__link--fb {
+  background-position: 17px 14px;
+}
+.nav__link--tw {
+  background-position: -39px 14px;
+}
+.nav__link--in {
+  background-position: -93px 14px;
+}
+.nav__link--yt {
+  background-position: -150px 14px;
+}

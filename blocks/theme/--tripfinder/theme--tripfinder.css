@@ -1,0 +1,15 @@
+@font-face {
+  font-family: BigNoodleTitling;
+  src: url(BigNoodleTitling.ttf);
+}
+
+.theme--tripfinder {
+  font-family: open sans, sans-serif;
+  color: #5f5f5f;
+}
+
+.theme--tripfinder .theme__title {
+  font-family: BigNoodleTitling;
+  text-transform: uppercase;
+  font-weight: normal;
+}

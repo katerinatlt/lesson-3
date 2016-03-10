@@ -1,0 +1,27 @@
+.form--search .form__field,
+.form--search .form__submit {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 28px;
+  padding: 15px 20px;
+}
+
+.form--search .form__field {
+  background-color: #f2f2f2;
+  background-image: url(search_icon.png);
+  background-repeat: no-repeat;
+}
+
+.form__field--search {
+  background-position: 95% 17px;
+}
+.form__field--destination {
+  background-position: 95% -55px;
+}
+.form__field--type {
+  background-position: 95% -140px;
+}
+.form__field--month {
+  background-position: 95% -225px;
+}
