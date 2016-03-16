@@ -31,12 +31,12 @@
   left: 0;
 }
 
-.contacts__item--phone:before {
+.contacts__item:nth-child(1):before {
   background-position: 0 3px;
 }
-.contacts__item--mail:before {
+.contacts__item:nth-child(2):before {
   background-position: 0 -20px;
 }
-.contacts__item--time:before {
+.contacts__item:nth-child(3):before {
   background-position: 0 -46px;
 }

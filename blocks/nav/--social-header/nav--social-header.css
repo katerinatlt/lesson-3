@@ -1,0 +1,28 @@
+.nav--social-header {
+  padding: 6px 0 4px 27px;
+  border-right: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+.nav--social-header .nav__link {
+  width: 20px;
+  height: 20px;
+  background-image: url(social_icon.png);
+  background-repeat: no-repeat;
+  margin-left: 27px;
+}
+
+.nav--social-header .nav__item:nth-child(1) .nav__link {
+  background-position: 5px 2px;
+}
+.nav--social-header .nav__item:nth-child(2) .nav__link {
+  background-position: -41px 2px;
+}
+.nav--social-header .nav__item:nth-child(3) .nav__link {
+  background-position: -88px 2px;
+}
+.nav--social-header .nav__item:nth-child(4) .nav__link {
+  background-position: -136px 1px;
+}
+.nav--social-header .nav__item:nth-child(5) .nav__link {
+  background-position: -183px 1px;
+}

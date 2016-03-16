@@ -3,26 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <title>TripFinder</title>
-    <link rel="stylesheet" type="text/css" href="blocks/style.css" />
+    <!--link rel="stylesheet" type="text/css" href="blocks/style.css" /-->
+    <link rel="stylesheet/less" type="text/css" href="blocks/style.less" />
   </head>
 
   <body class="theme--tripfinder grid">
 
     <!-- header -->
     <header class="header">
-      <div class="grid__container">
-        <ul class="contacts">
-          <li class="contacts__item contacts__item--phone">+1 420-000-6000</li>
-          <li class="contacts__item contacts__item--mail"><a class="contacts__link" href="mailto:hello@website.com">hello@website.com</a></li>
-          <li class="contacts__item contacts__item--time">6am - 11pm</li>
+      <div class="grid__container grid__row">
+        <ul class="contacts grid__col--8">
+          <li class="contacts__item">+1 420-000-6000</li>
+          <li class="contacts__item"><a class="contacts__link" href="mailto:hello@website.com">hello@website.com</a></li>
+          <li class="contacts__item">6am - 11pm</li>
         </ul>
+        <ul class="nav nav--horiz nav--social-header grid__col--3">
+          <li class="nav__item"><a class="nav__link" href="/" title="Facebook"></a></li>
+          <li class="nav__item"><a class="nav__link" href="/" title="Twitter"></a></li>
+          <li class="nav__item"><a class="nav__link" href="/" title="Instagram"></a></li>
+          <li class="nav__item"><a class="nav__link" href="/" title="YouTube"></a></li>
+          <li class="nav__item"><a class="nav__link" href="/" title="WhatsApp"></a></li>
+        </ul>
+        <div class="search--header grid__col--1">
+          <button class="search__icon" title="Search"></button>
+          <form class="search__form form form--search-header">
+            <input class="form__field" type="text" placeholder="Search">
+            <input class="form__submit button" type="submit" value="GO!">
+          </form>
+        </div>
       </div>
       <hr class="header__separator">
       <div class="grid__container grid__row">
         <div class="grid__col--3">
           <a class="header__logo" href="/" title="TripFinder"><img src="blocks/logo/logo.png" alt=""></a>
         </div>
-        <ul class="nav nav--horiz nav--main-menu grid__col--9">
+        <ul class="nav nav--horiz nav--main-menu">
           <li class="nav__item"><a class="nav__link" href="/">Home</a></li>
           <li class="nav__item"><a class="nav__link" href="/">Blog</a></li>
           <li class="nav__item"><a class="nav__link" href="/">Gallery</a></li>
@@ -41,14 +56,14 @@
         <h2 class="banner__caption">Discover your next great adventure, become an explorer to get started!</h2>
 
         <!-- search form -->
-        <div class="search">
+        <div class="search--banner">
           <h1 class="search__title theme__title">Search tours</h1>
           <p class="search__caption">Find your dream tour today!</p>
-          <form class="form form--search">
-            <input class="form__field form__field--search" type="text" placeholder="Search Tour">
-            <input class="form__field form__field--destination" type="text" placeholder="Destination">
-            <input class="form__field form__field--type" type="text" placeholder="Tour Type">
-            <input class="form__field form__field--month" type="text" placeholder="Month">
+          <form class="form form--search-banner">
+            <input class="form__field" type="text" placeholder="Search Tour">
+            <input class="form__field" type="text" placeholder="Destination">
+            <input class="form__field" type="text" placeholder="Tour Type">
+            <input class="form__field" type="text" placeholder="Month">
             <input class="form__submit button" type="submit" value="Find tours">
           </form>
         </div>
@@ -63,6 +78,104 @@
 
     </div>
 
+    <!-- tour type block -->
+    <div class="tour-type">
+      <div class="grid__container">
+        <h1 class="tour-type__h1 theme__title">Find a Tour by Tour Type</h1>
+        <p class="tour-type__caption">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
+
+        <ul class="nav nav--horiz nav--tour-type">
+          <li class="nav__item"><a class="nav__link theme__title" href="/">North America</a></li>
+          <li class="nav__item"><a class="nav__link theme__title" href="/">North America</a></li>
+          <li class="nav__item"><a class="nav__link theme__title" href="/">San Francisco</a></li>
+          <li class="nav__item"><a class="nav__link theme__title" href="/">Amazon Cruise</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- deals block -->
+    <div class="deals">
+      <div class="grid__container">
+        <h1 class="deals__h1 theme__title">Deals and Discounts</h1>
+
+        <section class="deals__articles grid__row">
+          <article class="grid__col--4">
+            <div class="deals__item">
+              <img class="deals__img" src="blocks/deals/deals__item_bkg_1.jpg" alt="">
+              <div class="deals__price theme__title">
+                <span class="deals__price-old">$899</span>
+                <span class="deals__price-new">$499</span>
+              </div>
+              <h2 class="deals__title theme__title">Surfing</h2>
+              <p class="deals__caption">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
+              <a class="deals__link button" href="/">Book now</a>
+            </div>
+          </article>
+          <article class="grid__col--4">
+            <div class="deals__item">
+              <img class="deals__img" src="blocks/deals/deals__item_bkg_2.jpg" alt="">
+              <div class="deals__price theme__title">
+                <span class="deals__price-old">$899</span>
+                <span class="deals__price-new">$499</span>
+              </div>
+              <h2 class="deals__title theme__title">Surfing</h2>
+              <p class="deals__caption">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
+              <a class="deals__link button" href="/">Book now</a>
+            </div>
+          </article>
+          <article class="grid__col--4">
+            <div class="deals__item">
+              <img class="deals__img" src="blocks/deals/deals__item_bkg_3.jpg" alt="">
+              <div class="deals__price theme__title">
+                <span class="deals__price-old">$899</span>
+                <span class="deals__price-new">$499</span>
+              </div>
+              <h2 class="deals__title theme__title">Surfing</h2>
+              <p class="deals__caption">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
+              <a class="deals__link button" href="/">Book now</a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <!-- trips block -->
+    <div class="trips">
+      <h1 class="trips__h1 theme__title">Find a Tour by Beautiful Trips</h1>
+      <section class="trips__articles grid__row">
+        <article class="trips__item grid__col--4">
+          <h2 class="trips__title">Promotional trip</h2>
+          <h3 class="trips__caption">Orlando, Air/3 Nights</h3>
+          <a class="trips__link button">Know more</a>
+        </article>
+        <article class="trips__item grid__col--4">
+          <h2 class="trips__title">Promotional trip</h2>
+          <h3 class="trips__caption">Orlando, Air/3 Nights</h3>
+          <a class="trips__link button">Know more</a>
+        </article>
+        <article class="trips__item grid__col--4">
+          <h2 class="trips__title">Promotional trip</h2>
+          <h3 class="trips__caption">Orlando, Air/3 Nights</h3>
+          <a class="trips__link button">Know more</a>
+        </article>
+        <article class="trips__item grid__col--4">
+          <h2 class="trips__title">Promotional trip</h2>
+          <h3 class="trips__caption">Orlando, Air/3 Nights</h3>
+          <a class="trips__link button">Know more</a>
+        </article>
+        <article class="trips__item grid__col--4">
+          <h2 class="trips__title">Promotional trip</h2>
+          <h3 class="trips__caption">Orlando, Air/3 Nights</h3>
+          <a class="trips__link button">Know more</a>
+        </article>
+        <article class="trips__item grid__col--4">
+          <h2 class="trips__title">Promotional trip</h2>
+          <h3 class="trips__caption">Orlando, Air/3 Nights</h3>
+          <a class="trips__link button">Know more</a>
+        </article>
+      </section>
+    </div>
+
     <!-- news block -->
     <div class="news">
 
@@ -71,8 +184,8 @@
         <h1 class="news__h1 theme__title">News &amp; events</h1>
         <p class="news__caption">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
 
-        <div class="news__articles grid__row">
-          <div class="grid__col--4">
+        <section class="news__articles grid__row">
+          <article class="grid__col--4">
             <div class="news__item">
               <img class="news__img" src="blocks/news/news__item--1.jpg" alt="">
               <h3 class="news__h3">Living the Travel Lifestyle</h3>
@@ -82,8 +195,8 @@
               </div>
               <p class="news__description">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec!</p>
             </div>
-          </div>
-          <div class="grid__col--4">
+          </article>
+          <article class="grid__col--4">
             <div class="news__item">
               <img class="news__img" src="blocks/news/news__item--2.jpg" alt="">
               <h3 class="news__h3">Living the Travel Lifestyle</h3>
@@ -93,8 +206,8 @@
               </div>
               <p class="news__description">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec!</p>
             </div>
-          </div>
-          <div class="grid__col--4">
+          </article>
+          <article class="grid__col--4">
             <div class="news__item">
               <img class="news__img" src="blocks/news/news__item--3.jpg" alt="">
               <h3 class="news__h3">Living the Travel Lifestyle</h3>
@@ -104,8 +217,8 @@
               </div>
               <p class="news__description">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec!</p>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
 
       </div>
 
@@ -115,7 +228,7 @@
     <div class="luxury">
       <h1 class="luxury__title theme__title">Luxury travel</h1>
       <h2 class="luxury__caption theme__title">Peace of mind guaranteed!</h2>
-      <a class="luxury__link link button" href="/">Find tours</a>
+      <a class="luxury__link button" href="/">Find tours</a>
     </div>
 
     <!-- footer -->
@@ -141,11 +254,11 @@
 
         <div class="social grid__col--3">
           <h3 class="footer__title theme__title">Follow us</h3>
-          <ul class="nav nav--horiz nav--social">
-            <li class="nav__item"><a class="nav__link nav__link--fb" href="/" title="Facebook"></a></li>
-            <li class="nav__item"><a class="nav__link nav__link--tw" href="/" title="Twitter"></a></li>
-            <li class="nav__item"><a class="nav__link nav__link--in" href="/" title="Instagram"></a></li>
-            <li class="nav__item"><a class="nav__link nav__link--yt" href="/" title="YouTube"></a></li>
+          <ul class="nav nav--horiz nav--social-footer">
+            <li class="nav__item"><a class="nav__link" href="/" title="Facebook"></a></li>
+            <li class="nav__item"><a class="nav__link" href="/" title="Twitter"></a></li>
+            <li class="nav__item"><a class="nav__link" href="/" title="Instagram"></a></li>
+            <li class="nav__item"><a class="nav__link" href="/" title="YouTube"></a></li>
           </ul>
         </div>
 
@@ -164,11 +277,14 @@
       <div class="footer__copyright grid__container grid__row">
 
         <p class="grid__col--6">&copy; PSDfreebies.com 2015. All rights reserved.</p>
-        <p class="design-by grid__col--6">Design by: <a class="design-by__link link link--grey" href="http://PSDFreebies.com" target="_blank">PSDFreebies.com</a></p>
+        <p class="design-by grid__col--6">Design by: <a class="design-by__link" href="http://PSDFreebies.com" target="_blank">PSDFreebies.com</a></p>
 
       </div>
 
     </footer>
+
+    <!-- js -->
+    <!--script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script-->
 
   </body>
 

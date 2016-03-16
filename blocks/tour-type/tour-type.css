@@ -1,0 +1,18 @@
+.tour-type {
+  height: 708px;
+  text-align: center;
+  background: url(tour-type_bkg.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 65px;
+}
+
+.tour-type__h1 {
+  font-size: 50px;
+  letter-spacing: 2.5px;
+  margin-bottom: 28px;
+}
+
+.tour-type__caption {
+  font-size: 20px;
+  line-height: 25px;
+}
