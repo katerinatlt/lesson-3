@@ -1,0 +1,42 @@
+.nav--tour-type {
+  margin: 0 -1.45%;
+  margin-top: 62px;
+}
+
+.nav--tour-type .nav__item {
+  width: 266px;
+  height: 266px;
+  display: table;
+  box-shadow:0 0 0 140px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 140px;
+  margin: 0 1.45%;
+}
+
+.nav--tour-type .nav__item:hover {
+  box-shadow: none;
+}
+
+.nav--tour-type .nav__link {
+  height: 100%;
+  color: #fff;
+  font-size: 34px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.nav--tour-type .nav__link:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav--tour-type .nav__item:nth-child(1) {
+  background: url(nav--tour-type_bkg_1.jpg) no-repeat;
+}
+.nav--tour-type .nav__item:nth-child(2) {
+  background: url(nav--tour-type_bkg_2.jpg) no-repeat;
+}
+.nav--tour-type .nav__item:nth-child(3) {
+  background: url(nav--tour-type_bkg_3.jpg) no-repeat;
+}
+.nav--tour-type .nav__item:nth-child(4) {
+  background: url(nav--tour-type_bkg_4.jpg) no-repeat;
+}

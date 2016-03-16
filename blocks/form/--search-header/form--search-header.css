@@ -1,0 +1,10 @@
+.form--search-header .form__field {
+    font-size: 13px;
+    padding: 13px 15px;
+}
+
+.form--search-header .form__submit {
+    float: right;
+    font-size: 14px;
+    padding: 11px 8px;
+}

@@ -1,0 +1,26 @@
+.search--banner {
+  width: 510px;
+  background: #fff;
+  position: absolute;
+  top: -180px;
+  right: 15px;
+  padding: 25px 40px 35px;
+  z-index: 10;
+}
+
+.search--banner .search__title,
+.search--banner .search__caption {
+  text-align: center;
+}
+
+.search--banner .search__title {
+  font-size: 70px;
+  letter-spacing: 3.5px;
+  margin: 0;
+}
+
+.search--banner .search__caption {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}

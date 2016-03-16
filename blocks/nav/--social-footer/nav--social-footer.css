@@ -1,0 +1,27 @@
+.nav--social-footer {}
+
+.nav--social-footer .nav__item:not(:first-child) {
+  margin-left: 11px;
+}
+
+.nav--social-footer .nav__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 25px;
+  background-image: url(social_icon.png);
+  background-repeat: no-repeat;
+  background-color: #47a0ff;
+}
+
+.nav--social-footer .nav__item:nth-child(1) .nav__link {
+  background-position: 17px 14px;
+}
+.nav--social-footer .nav__item:nth-child(2) .nav__link {
+  background-position: -39px 14px;
+}
+.nav--social-footer .nav__item:nth-child(3) .nav__link {
+  background-position: -93px 14px;
+}
+.nav--social-footer .nav__item:nth-child(4) .nav__link {
+  background-position: -150px 14px;
+}
